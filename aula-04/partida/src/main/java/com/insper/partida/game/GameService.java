@@ -84,11 +84,11 @@ public class GameService {
         }
     }
 
-    public Integer getScoreTeam(String identifier) {
-        Team team = teamService.getTeam(identifier);
+    // public Integer getScoreTeam(String identifier) {
+    //     Team team = teamService.getTeam(identifier);
 
-        return gameRepository.sumScoreTeamHome(team);
-    }
+    //     return gameRepository.sumScoreTeamHome(team);
+    // }
 
     public GameReturnDTO getGame(String identifier) {
         return GameReturnDTO.covert(gameRepository.findByIdentifier(identifier));

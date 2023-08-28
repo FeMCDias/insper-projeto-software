@@ -46,9 +46,9 @@ public class GameController {
         gameService.deleteGame(identifier);
     }
 
-    @GetMapping("/{id}/score")
-    public Integer getScoreTeam(@PathVariable String id) {
-        return gameService.getScoreTeam(id);
-    }
+    // @GetMapping("/{id}/score")
+    // public Integer getScoreTeam(@PathVariable String id) {
+    //     return gameService.getScoreTeam(id);
+    // }
 
 }
