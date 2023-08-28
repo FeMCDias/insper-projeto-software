@@ -3,6 +3,8 @@ package com.insper.partida.game;
 import com.insper.partida.equipe.Team;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
@@ -23,9 +25,11 @@ public class Game {
 
     private Integer scoreAway;
 
-    private Team home;
-    
     private Team away;
+
+    private Team home;
+
+    private String stadium;
 
     private Integer attendance;
 
