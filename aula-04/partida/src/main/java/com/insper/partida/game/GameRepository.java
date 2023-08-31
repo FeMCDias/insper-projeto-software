@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 public interface GameRepository extends MongoRepository<Game, String> {
     Game findByIdentifier(String identifier);
 
-    Page<Game> findByHomeAndAway(Team tHome, Team tAway, Pageable pageable);
+    Page<Game> findByHomeAndAway(String tHome, String tAway, Pageable pageable);
 
     Page<Game> findByAttendanceGreaterThan(Integer attendance, Pageable pageable);
 

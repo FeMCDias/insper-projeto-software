@@ -25,9 +25,9 @@ public class Game {
 
     private Integer scoreAway;
 
-    private Team away;
+    private String away;
 
-    private Team home;
+    private String home;
 
     private String stadium;
 
