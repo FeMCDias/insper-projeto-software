@@ -18,8 +18,8 @@ public class GameReturnDTO {
     private LocalDateTime gameDate;
     private String status;
 
-    private String home;
-    private String away;
+    private TeamReturnDTO home;
+    private TeamReturnDTO away;
 
     public static GameReturnDTO covert(Game game) {
         GameReturnDTO gameReturnDTO = new GameReturnDTO();
